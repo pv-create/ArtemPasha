@@ -1,7 +1,9 @@
 import React from 'react';
+import {Layout} from "antd";
 
 const Footer = () => {
     return (
+        <Layout.Footer>
             <footer className="text-center text-lg-start bg-dark text-muted">
                 <section
                     className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -112,6 +114,7 @@ const Footer = () => {
                     <a className="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>
             </footer>
+        </Layout.Footer>
     );
 };
 

@@ -1,8 +1,9 @@
 import React from 'react';
+import {Layout} from "antd";
 
 const navBar = () => {
     return (
-        <div>
+        <Layout.Header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Navbar</a>
@@ -44,7 +45,7 @@ const navBar = () => {
                     </div>
                 </div>
             </nav>
-        </div>
+        </Layout.Header>
     );
 };
 
