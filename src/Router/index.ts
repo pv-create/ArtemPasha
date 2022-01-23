@@ -1,5 +1,7 @@
 import Login from "../Components/Pages/LoginPage/login";
 import homePage from "../Components/Pages/HomePage/homepage";
+import citiePage from "../Components/Pages/CitiesPage/cities";
+import aboutPage from "../Components/Pages/AboutPage/about";
 
 export interface IRoute {
     path:string;
@@ -8,15 +10,21 @@ export interface IRoute {
 }
 
 export enum routeNames{
-    LOGIN='/login',
-    HOMEPAGE='/'
+    LOGINPAGE='/login',
+    HOMEPAGE='/',
+    ABOUTPAGE='/about',
+    CITIESPAGE='/cities',
 
 }
 //маршруты для неавторизованны пользователей
 export const publicRouts:IRoute[]=[
-    {path:routeNames.LOGIN, exact:true, component:Login}
+    {path:routeNames.LOGINPAGE, exact:true, component:Login},
+    {path:routeNames.CITIESPAGE, exact:true, component:citiePage},
+    {path:routeNames.ABOUTPAGE, exact:true, component:aboutPage},
 ]
 //для авторизованных пользователей
 export const privateRouts:IRoute[]=[
-    {path:routeNames.HOMEPAGE, exact:true, component:homePage}
+    {path:routeNames.HOMEPAGE, exact:true, component:homePage},
+    {path:routeNames.CITIESPAGE, exact:true, component:citiePage},
+    {path:routeNames.ABOUTPAGE, exact:true, component:aboutPage},
 ]

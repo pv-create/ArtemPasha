@@ -4,14 +4,8 @@ import {Layout} from "antd";
 const Footer = () => {
     return (
         <Layout.Footer>
-            <footer className="text-center text-lg-start bg-dark text-muted">
-                <section
-                    className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-                >
-
-                    <div className="me-5 d-none d-lg-block">
-                        <span>Get connected with us on social networks:</span>
-                    </div>
+            <footer className="text-center text-lg-start bg-dark text-muted" >
+                <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
 
                     <div>
                         <a href="" className="me-4 text-reset">
