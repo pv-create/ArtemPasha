@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const homePage = () => {
+const HomePage:FC = () => {
     return (
         <div>
             <div className="card-group">
@@ -187,4 +187,4 @@ const homePage = () => {
     );
 };
 
-export default homePage;
+export default HomePage;

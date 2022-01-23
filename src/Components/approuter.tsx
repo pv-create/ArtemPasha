@@ -1,14 +1,19 @@
 import React from 'react';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
 import {privateRouts, publicRouts, routeNames} from "../Router";
 import Login from "./Pages/LoginPage/login";
+import {useTransition, animated} from "react-spring";
+import {log} from "util";
+import HomePage from "./Pages/HomePage/homepage";
 
-const appRouter = () => {
-    let auth:boolean=true
+const AppRouter = () => {
+    let auth:boolean=true;
+
     return (
-
             <BrowserRouter>
-                {auth ?
+
+                {
+                    auth ?
                     //роуты авторизованных пользователей
                     <Routes>
                         {privateRouts.map(route =>
@@ -16,7 +21,7 @@ const appRouter = () => {
                         )}
                         <Route
                             path="*"
-                            element={<Login/>}
+                            element={<HomePage/>}
                         />
                     </Routes>
                     //роуты неавторизованных пользователей
@@ -38,4 +43,4 @@ const appRouter = () => {
     );
 }
 
-export default appRouter;
+export default AppRouter;

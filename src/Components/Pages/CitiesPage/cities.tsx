@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const citiePage = () => {
+const СitiePage:FC = () => {
     return (
         <div>
             <h1>Список городов</h1>
@@ -8,4 +8,4 @@ const citiePage = () => {
     );
 };
 
-export default citiePage;
+export default СitiePage;

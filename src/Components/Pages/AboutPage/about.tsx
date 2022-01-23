@@ -13,8 +13,6 @@ class aboutPage extends Component {
                 <div className="container" style={{marginBottom: '30px'}}>
                     <AdditionalInformation/>
                 </div>
-
-
             </div>
         );
     }

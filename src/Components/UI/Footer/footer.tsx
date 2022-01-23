@@ -27,7 +27,6 @@ const Footer = () => {
                             <i className="fab fa-github"></i>
                         </a>
                     </div>
-
                 </section>
 
                 <section className="">
